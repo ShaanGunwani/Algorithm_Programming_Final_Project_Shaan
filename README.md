@@ -11,6 +11,30 @@ The "snake" class is defined next, which has some class level variables like "bo
 
 Additionally, the code also uses the Tkinter library to handle user input and the Pygame library to draw the game on the screen. The game can be controlled with the arrow keys and ends when the snake runs into a wall or itself.
 
+# Use Case Diagram
+
+![image](https://user-images.githubusercontent.com/114371881/212548874-021ccfd9-e3ab-4b6d-bb10-3ad6d9c4000f.png)
+
+# Activity Diagram
+
+![image](https://user-images.githubusercontent.com/114371881/212548933-8dfbd512-eeb1-4eb1-9e24-191713763671.png)
+
+
+# Class Diagram
+
+![image](https://user-images.githubusercontent.com/114371881/212548795-a1c1c111-b89a-415f-a0f0-7945d5497716.png)
+
+The cube class has a one-to-many relationship with the snake class, which means that one cube object is used in multiple snake objects.
+The snake class has a many-to-one relationship with the cube class, which means that multiple snake objects are composed of one cube object.
+The pygame and tkinter classes have a one-to-one relationship with the cube and snake classes, which means that the pygame and tkinter classes are used to create the cube and snake classes.
+
+In the class diagram, the multiplicities show the relationship between the classes and the number of objects involved in that relationship. For example, the multiplicity between the snake class and the cube class is represented as "1..*" because a snake object can have multiple cube objects (its body), but each cube object can only belong to one snake object.
+
+The multiplicities in the diagram are:
+
+The snake class has an attribute head of type cube, the multiplicity here is represented as 1..1, meaning that a snake object has exactly one cube object as its head.
+The snake class has an attribute body of type List of cube, the multiplicity here is represented as 0..* , meaning that a snake object can have zero or more cube objects as its body.
+
 # Modules
 math: This module provides mathematical functions and constants
 random: This module provides functions for generating random numbers
