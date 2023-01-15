@@ -79,3 +79,7 @@ messagebox: This module provides an easy way to display message boxes in tkinter
 11. Understood the importance of user interaction: Games are interactive, I understood how to handle user input and how to use it to update the game state.
 
 12. Understood the importance of game performance: The game performance is important for the user experience, understanding how to optimize the game performance through code optimization and debugging is crucial.
+
+# Video Demo 3 minutes
+
+https://clipchamp.com/watch/I7gSMHUoeIl
