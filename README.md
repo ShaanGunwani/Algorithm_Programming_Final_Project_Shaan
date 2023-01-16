@@ -36,11 +36,15 @@ The snake class has an attribute head of type cube, the multiplicity here is rep
 The snake class has an attribute body of type List of cube, the multiplicity here is represented as 0..* , meaning that a snake object can have zero or more cube objects as its body.
 
 # Modules
-math: This module provides mathematical functions and constants
-random: This module provides functions for generating random numbers
-pygame: This module is a set of Python modules designed for writing games. It is built on top of the SDL library, which provides low-level access to audio, keyboard, mouse, and display functions.
-tkinter: This module provides a powerful object-oriented interface for creating graphical user interfaces (GUIs) in Python.
-messagebox: This module provides an easy way to display message boxes in tkinter
+1. math: This module provides mathematical functions and constants
+
+2. random: This module provides functions for generating random numbers
+
+3.pygame: This module is a set of Python modules designed for writing games. It is built on top of the SDL library, which provides low-level access to audio, keyboard, mouse, and display functions.
+
+4.tkinter: This module provides a powerful object-oriented interface for creating graphical user interfaces (GUIs) in Python.
+
+5. messagebox: This module provides an easy way to display message boxes in tkinter
 
 # Essential Algorithms
 1. The move() method in the snake class: This method updates the position of the snake's body based on user input. It uses an event loop to listen for user input and updates the position of the snake's head and body accordingly.
