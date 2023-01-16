@@ -40,9 +40,9 @@ The snake class has an attribute body of type List of cube, the multiplicity her
 
 2. random: This module provides functions for generating random numbers
 
-3.pygame: This module is a set of Python modules designed for writing games. It is built on top of the SDL library, which provides low-level access to audio, keyboard, mouse, and display functions.
+3. pygame: This module is a set of Python modules designed for writing games. 
 
-4.tkinter: This module provides a powerful object-oriented interface for creating graphical user interfaces (GUIs) in Python.
+4. tkinter: This module provides a powerful object-oriented interface for creating graphical user interfaces (GUIs) in Python.
 
 5. messagebox: This module provides an easy way to display message boxes in tkinter
 
