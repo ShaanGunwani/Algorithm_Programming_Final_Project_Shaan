@@ -15,7 +15,7 @@ class cube(object):
     def __init__(self, start, dirnx=1, dirny=0, color=(255, 0, 0)):
         # dirnx = 1 to make sure start moving right when we run the program. So, setting it with direction x
         # If dirnx = 0, had to click a key before snake starts moving
-        # These are optional because when creating new cue object we don't have to implicitly say direction x is 1 and direction y is 0 because it's assumed its always going to be like that
+        # These are optional because when creating new cube object we don't have to implicitly say direction x is 1 and direction y is 0 because it's assumed its always going to be like that
         self.pos = start
         self.dirnx = 1
         self.dirny = 0
@@ -121,7 +121,7 @@ class snake(object):
                     self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
         # Move the cube
         # In this loop it moves all objects for us
-        for i, c in enumerate(self.body):  # Look through the list of positions that we have on stake
+        for i, c in enumerate(self.body):  # Look through the list of positions that we have on snake
             # i=index, c=cube object
             # Get the index and cube object in self.body(made up of cube objects (line 31))
             # For each c, grab the position (p) and see if position in turn list
@@ -282,10 +282,10 @@ def message_box(subject, content):
 
 # Main loop
 def main():
-    # Use global so no need to pass everytime when drawing a grid
+    # Use global so no need to pass everytime when drawing 
     global width, rows, s, snack
     # Variables (Do not need to use height variable because just going to draw a square surface everytime)
-    # (Do not  need two variables for width and height as going to contain the same number)
+    # (Do not need two variables for width and height as going to contain the same number)
     width = 500
     # The rows' value should divide 500 evenly otherwise, the rows will be looking weird
     rows = 20  # If set it to 10 for example then there won't be too much room for the snake to move around
@@ -315,7 +315,7 @@ def main():
         # To not be that fast, I am delaying it also by a few milliseconds
         # The lower this goes, the slower it's going to be
         # Call s.move, which is the snake object, everytime the main loop runs
-        # Goingto go up to that method in snake and going to check everytime run the loop, if key is pressed if yes, move accordingly
+        # Going to go up to that method in snake and going to check everytime run the loop, if key is pressed if yes, move accordingly
         s.move()
         # Check if snake head has hit the snack, if yes, then add another part to the snake body, otherwise not going to do that
         if s.body[0].pos == snack.pos:  # Both are cube objects
